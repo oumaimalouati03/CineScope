@@ -1,0 +1,91 @@
+{
+  "source": "MovieLens ml-latest-small",
+  "actions": [
+    "movies: normalisation des textes; doublons exacts supprimés=0; lignes invalides supprimées=0; genres sans valeur représentés par une chaîne vide.",
+    "ratings: validation des types et de l'échelle 0,5–5 par demi-étoile; doublons exacts/couples supprimés=0; notes invalides supprimées=0; évaluations orphelines supprimées=0.",
+    "tags: normalisation des espaces; les tags distincts d'un même utilisateur/film sont conservés; doublons exacts supprimés=0; lignes invalides supprimées=0; tags orphelins supprimés=0.",
+    "links: IDs convertis en valeurs numériques; doublons exacts supprimés=0; liens sans film correspondant supprimés=0; identifiants IMDb/TMDb manquants conservés."
+  ],
+  "tables": {
+    "movies": {
+      "rows": 9742,
+      "columns": [
+        "movieId",
+        "title",
+        "genres"
+      ],
+      "missing_by_column": {
+        "movieId": 0,
+        "title": 0,
+        "genres": 0
+      },
+      "exact_duplicate_rows": 0
+    },
+    "ratings": {
+      "rows": 100836,
+      "columns": [
+        "userId",
+        "movieId",
+        "rating",
+        "timestamp"
+      ],
+      "missing_by_column": {
+        "userId": 0,
+        "movieId": 0,
+        "rating": 0,
+        "timestamp": 0
+      },
+      "exact_duplicate_rows": 0
+    },
+    "tags": {
+      "rows": 3683,
+      "columns": [
+        "userId",
+        "movieId",
+        "tag",
+        "timestamp"
+      ],
+      "missing_by_column": {
+        "userId": 0,
+        "movieId": 0,
+        "tag": 0,
+        "timestamp": 0
+      },
+      "exact_duplicate_rows": 0
+    },
+    "links": {
+      "rows": 9742,
+      "columns": [
+        "movieId",
+        "imdbId",
+        "tmdbId"
+      ],
+      "missing_by_column": {
+        "movieId": 0,
+        "imdbId": 0,
+        "tmdbId": 8
+      },
+      "exact_duplicate_rows": 0
+    }
+  },
+  "raw_row_counts": {
+    "movies": 9742,
+    "ratings": 100836,
+    "tags": 3683,
+    "links": 9742
+  },
+  "train_test": {
+    "train_rows": 80668,
+    "test_rows": 20168,
+    "test_fraction": 0.2,
+    "random_state": 42,
+    "users_in_train": 610,
+    "users_in_test": 610,
+    "overlapping_user_movie_pairs": 0
+  },
+  "rating_validation": {
+    "min": 0.5,
+    "max": 5.0,
+    "invalid_scale_count": 0
+  }
+}

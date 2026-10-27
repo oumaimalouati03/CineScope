@@ -1,0 +1,81 @@
+{
+  "model": "ItemBasedCollaborativeFiltering",
+  "approach": "Machine Learning classique - filtrage collaboratif item-based",
+  "train_rows": 80668,
+  "test_rows": 20168,
+  "train_users": 610,
+  "train_movies": 8977,
+  "rmse": 0.8810991398135862,
+  "mae": 0.668580800957453,
+  "precision_at_10": 0.10754098360655737,
+  "recall_at_10": 0.08272673353499106,
+  "users_evaluated": 610,
+  "users_with_relevant_test_items": 599,
+  "total_hits_at_k": 656,
+  "total_relevant_test_items_in_catalog": 9422,
+  "ranking_k": 10,
+  "relevance_threshold": 4.0,
+  "example_user_id": 1,
+  "example_recommendations": [
+    {
+      "movieId": 111,
+      "predicted_rating": 5.0,
+      "title": "Taxi Driver (1976)",
+      "genres": "Crime|Drama|Thriller"
+    },
+    {
+      "movieId": 246,
+      "predicted_rating": 5.0,
+      "title": "Hoop Dreams (1994)",
+      "genres": "Documentary"
+    },
+    {
+      "movieId": 296,
+      "predicted_rating": 5.0,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller"
+    },
+    {
+      "movieId": 318,
+      "predicted_rating": 5.0,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "movieId": 475,
+      "predicted_rating": 5.0,
+      "title": "In the Name of the Father (1993)",
+      "genres": "Drama"
+    },
+    {
+      "movieId": 541,
+      "predicted_rating": 5.0,
+      "title": "Blade Runner (1982)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "movieId": 750,
+      "predicted_rating": 5.0,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "genres": "Comedy|War"
+    },
+    {
+      "movieId": 778,
+      "predicted_rating": 5.0,
+      "title": "Trainspotting (1996)",
+      "genres": "Comedy|Crime|Drama"
+    },
+    {
+      "movieId": 858,
+      "predicted_rating": 5.0,
+      "title": "Godfather, The (1972)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "movieId": 909,
+      "predicted_rating": 5.0,
+      "title": "Apartment, The (1960)",
+      "genres": "Comedy|Drama|Romance"
+    }
+  ]
+}
